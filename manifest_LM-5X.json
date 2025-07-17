@@ -1,0 +1,15 @@
+{
+  "name": "Firmware receiver",
+  "version": "1.1.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "https://2909434165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOtRD4RmxNSxZyhYDtlYJ%2Fuploads%2FALsBYFbXCyTFx27R7bGQ%2FLM-5X.bin?alt=media&token=de54dce8-4426-4173-9236-7de154eee0b5",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

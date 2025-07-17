@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Actualizador LM‑5X – LineMaster 2.4 GHz</title>
+    <meta
+      name="description"
+      content="Actualiza fácilmente el firmware de tu receptor LM‑5X en un solo paso."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <!-- ESP Web Tools -->
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
+    ></script> -->
+
+    <script module>
+      import(
+        "https://unpkg.com/esp-web-tools/dist/web/install-button.js?module"
+      );
+    </script>
+
+    <style>
+      body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Ubuntu, sans-serif;
+        margin: 0;
+        padding: 2rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 1.75rem;
+      }
+      p {
+        margin-bottom: 2rem;
+        color: #555;
+      }
+      esp-web-install-button {
+        --button-padding: 0.75rem 1.5rem;
+        --button-font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Actualizador de firmware LM‑5X</h1>
+    <p>
+      Conecta tu receptor LM‑5X al ordenador y pulsa el botón para instalar la
+      última versión del firmware.
+    </p>
+
+    <!-- Único botón de conexión y actualización -->
+    <esp-web-install-button manifest="./manifest_LM-5X.json">
+      <i slot="unsupported">
+        The demo is not available because your browser does not support Web
+        Serial. Open this page in Google Chrome or Microsoft Edge instead<span
+          class="not-supported-i hidden"
+        >
+          (but not on your iOS device)</span
+        >.
+      </i>
+    </esp-web-install-button>
+  </body>
+</html>
